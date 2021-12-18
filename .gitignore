@@ -1,52 +1,25 @@
-# Prerequisites
-*.d
-
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+#include<stdio.h>
+int main()
+{
+	printf("Food item-\n1.Pizza \n2.Burger\n3.Pasta\n4.French Fries\n5.Sandwich\n");
+	int choice=0;
+	scanf("%d",&choice);
+	switch (choice)
+	{
+		case 1:
+			printf("Price - Rs 239");
+			break;
+		case 2:
+			printf("Price - Rs 129");
+			break;
+		case 3:
+			printf("Price - Rs 179");
+			break;
+		case 4:
+			printf("Price - Rs 99");
+			break;
+		case 5:
+			printf("Price - Rs 149");
+			break;
+	}
+}
